@@ -1,0 +1,146 @@
+/* === Thème café — L'Antique App === */
+
+/* --- Base --- */
+QMainWindow, QWidget {
+    background-color: #FFF8E7;
+    color: #3E2723;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    font-size: 13px;
+}
+
+/* --- Boutons --- */
+QPushButton {
+    background-color: #6D4C41;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+QPushButton:hover {
+    background-color: #8D6E63;
+}
+
+QPushButton:pressed {
+    background-color: #5D4037;
+}
+
+/* --- Champs de saisie --- */
+QLineEdit, QTextEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+    background-color: #FFFFFF;
+    border: 1px solid #D7CCC8;
+    border-radius: 4px;
+    padding: 6px 8px;
+    color: #3E2723;
+    font-size: 13px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QComboBox:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+    border: 2px solid #6D4C41;
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 8px;
+}
+
+/* --- Tableaux --- */
+QTableWidget {
+    background-color: #FFFFFF;
+    alternate-background-color: #F5F1E8;
+    border: 1px solid #D7CCC8;
+    gridline-color: #D7CCC8;
+    selection-background-color: #A1887F;
+    selection-color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #3E2723;
+    color: #FFFFFF;
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* --- Labels --- */
+QLabel[class="title"] {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E2723;
+}
+
+QLabel[class="stat-value"] {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3E2723;
+}
+
+/* --- Cartes de statistiques --- */
+QFrame#statCard {
+    background-color: #FFFFFF;
+    border: 1px solid #D7CCC8;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* --- Barre latérale --- */
+QWidget#mainSidebar {
+    background-color: #3E2723;
+}
+
+QWidget#mainSidebar QPushButton#sidebarButton {
+    background-color: transparent;
+    color: #FFF8E7;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    padding: 14px 20px;
+    font-size: 14px;
+}
+
+QWidget#mainSidebar QPushButton#sidebarButton:hover {
+    background-color: #5D4037;
+}
+
+QWidget#mainSidebar QPushButton#sidebarButton:checked {
+    background-color: #5D4037;
+    border-left: 3px solid #A1887F;
+}
+
+/* --- Dialogues --- */
+QDialog {
+    background-color: #FFF8E7;
+}
+
+QDialogButtonBox QPushButton {
+    min-width: 80px;
+}
+
+/* --- Messages d'erreur --- */
+QLabel[class="error"] {
+    color: #C62828;
+    font-size: 12px;
+}
+
+/* --- Scrollbar --- */
+QScrollBar:vertical {
+    background-color: #F5F1E8;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #D7CCC8;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #A1887F;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
