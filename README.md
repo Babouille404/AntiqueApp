@@ -9,7 +9,7 @@ L'application partage la même base de données MySQL (`antique_db`) que le site
 ## Prérequis
 
 - **Python 3.10+**
-- **MySQL** avec la base de données `antique_db` déjà installée (via les scripts `database.sql` et `seed.sql` du projet L'Antique Web)
+- **MySQL** avec la base de données `antiqueweb_db` déjà installée (via les scripts `database.sql` et `seed.sql` du projet L'Antique Web)
 
 ## Installation
 
@@ -35,8 +35,8 @@ python main.py
 
 Ces identifiants sont issus du seed du site web :
 
-- **Email** : `employe@antique.fr`
-- **Mot de passe** : `password123`
+- **Email** : `admin@test.com`
+- **Mot de passe** : `test1234`
 
 ## Structure du projet
 
@@ -47,7 +47,6 @@ AntiqueApp/
 ├── README.md
 ├── main.py                     # Point d'entrée
 ├── config.py                   # Paramètres BDD (ignoré par git)
-├── config.example.py           # Modèle à copier
 ├── database/
 │   ├── __init__.py
 │   └── connection.py           # Connexion MySQL
